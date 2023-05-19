@@ -21,9 +21,9 @@ const UserList: React.FC<UserListProps> = ({ items }) => {
         lg:block
         overflow-y-auto 
         border-r 
-        border-red-200
+        border-gray-200
         block w-full left-0
-        bg-red-200
+        bg-white
       "
     >
       <div className="px-5">
