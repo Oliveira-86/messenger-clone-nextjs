@@ -10,6 +10,7 @@ import { find, uniq } from 'lodash'
 
 import ConversationBox from './ConversationBox'
 import { FullConversationType } from '@/app/types'
+import useConversation from '@/app/hooks/useConversation'
 
 interface ConversationListProps {
   initialItems: FullConversationType[]
@@ -23,6 +24,8 @@ const ConversationList: React.FC<ConversationListProps> = ({
 }) => {
   const [items, setItems] = useState(initialItems)
   const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const { conversationId, isOpen } = useConversation()
 
   const router = useRouter()
   const session = useSession()
@@ -80,18 +83,21 @@ const ConversationList: React.FC<ConversationListProps> = ({
         onClose={() => setIsModalOpen(false)}
       /> */}
       <aside
-        className={clsx(`
-        fixed 
-        inset-y-0 
-        pb-20
-        lg:pb-0
-        lg:left-20 
-        lg:w-80 
-        lg:block
-        overflow-y-auto 
-        border-r 
-        border-gray-200 
-      `)}
+        className={clsx(
+          `
+            fixed 
+            inset-y-0 
+            pb-20
+            lg:pb-0
+            lg:left-20 
+            lg:w-80 
+            lg:block
+            overflow-y-auto 
+            border-r 
+          border-gray-200 
+          `,
+          isOpen ? 'hidden' : 'block w-full left-0'
+        )}
       >
         <div className="px-5">
           <div className="flex justify-between mb-4 pt-4">
