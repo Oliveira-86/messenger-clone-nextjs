@@ -1,7 +1,7 @@
 'use client'
 
 import Button from '@/app/components/Button'
-import Input from '@/app/components/Input'
+import Input from '@/app/components/inputs/Input'
 import { FC, useCallback, useEffect, useState } from 'react'
 import { useForm, FieldValues, SubmitHandler } from 'react-hook-form'
 import { BsGithub, BsGoogle } from 'react-icons/bs'

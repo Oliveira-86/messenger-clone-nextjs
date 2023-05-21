@@ -10,6 +10,7 @@ import useOtherUser from '@/app/hooks/useOtherUser'
 import useActiveList from '@/app/hooks/useActiveList'
 
 import Avatar from '@/app/components/Avatar'
+import ConfirmModal from './ConfirmModal'
 
 interface ProfileDrawerProps {
   isOpen: boolean
@@ -25,6 +26,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
   data,
 }) => {
   const [confirmOpen, setConfirmOpen] = useState(false)
+
   const otherUser = useOtherUser(data)
 
   const joinedDate = useMemo(() => {
@@ -48,6 +50,10 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
 
   return (
     <>
+      <ConfirmModal
+        isOpen={confirmOpen}
+        onClose={() => setConfirmOpen(false)}
+      />
       <Transition.Root show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-50" onClose={onClose}>
           <Transition.Child
