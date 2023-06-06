@@ -1,6 +1,6 @@
 # Message Clone
 
-### "Message Clone" is a public project developed by myself, showcasing my skills and expertise in building web applications using Next.js, Prisma, Tailwind CSS, and TypeScript. This project aims to create a messaging application similar to popular messaging platforms, providing users with real-time communication capabilities. "Message Clone" has been successfully deployed on Vercel, a leading cloud platform for static site hosting and serverless functions.
+### "Message Clone" is a public project developed by myself, showcasing my skills and expertise in building web applications using Next.js, Prisma, Tailwind CSS, and TypeScript. This project aims to create a messaging application similar to popular messaging platforms, providing users with real-time communication capabilities with [Pusher](https://pusher.com/). "Message Clone" has been successfully deployed on Vercel, a leading cloud platform for static site hosting and serverless functions.
 
 # [Site](https://messenger-clone-nextjs-4gb3.vercel.app/)
 # [Video](https://messenger-clone-nextjs-4gb3.vercel.app/)
@@ -25,9 +25,10 @@
 #### 4. Message Organization: The application provides features for organizing and searching messages, ensuring efficient retrieval and management of conversations.
 #### 5. Responsive Design: The application is developed with a responsive design approach, allowing it to adapt seamlessly to different screen sizes and devices.
 
-### Technologies
+## Technologies
 
 ##### - [NextJS](https://nextjs.org/)
 ##### - [Prisma](https://www.prisma.io/)
 ##### - [MongoDB](https://www.mongodb.com/atlas/database)
 ##### - [Tailwind css](https://tailwindui.com/)
+#### - [Pusher](https://pusher.com/)
