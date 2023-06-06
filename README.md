@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Message Clone
 
-## Getting Started
+### "Message Clone" is a public project developed by myself, showcasing my skills and expertise in building web applications using Next.js, Prisma, Tailwind CSS, and TypeScript. This project aims to create a messaging application similar to popular messaging platforms, providing users with real-time communication capabilities. "Message Clone" has been successfully deployed on Vercel, a leading cloud platform for static site hosting and serverless functions.
 
-First, run the development server:
+# [Site](https://messenger-clone-nextjs-4gb3.vercel.app/)
+# [Video](https://messenger-clone-nextjs-4gb3.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Users Screen
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<div> 
+  <img width="95%" height="550" src="public/images/user.png">
+</div>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Conversation Screen
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<div> 
+  <img width="95%" height="550" src="public/images/conversation.png">
+</div>
 
-## Learn More
+## Features and Functionality:
 
-To learn more about Next.js, take a look at the following resources:
+#### 1. User Authentication: Users can create accounts, log in securely, and manage their profile settings.
+#### 2. Real-time Messaging: The application supports real-time communication between users, allowing them to send and receive messages instantly.
+#### 3. Contact Management: Users can manage their contacts, add new contacts, and organize them into groups or categories.
+#### 4. Message Organization: The application provides features for organizing and searching messages, ensuring efficient retrieval and management of conversations.
+#### 5. Responsive Design: The application is developed with a responsive design approach, allowing it to adapt seamlessly to different screen sizes and devices.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Technologies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+##### - [NextJS](https://nextjs.org/)
+##### - [Prisma](https://www.prisma.io/)
+##### - [MongoDB](https://www.mongodb.com/atlas/database)
+##### - [Tailwind css](https://tailwindui.com/)
